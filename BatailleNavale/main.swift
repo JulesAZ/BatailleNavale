@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CaseState { // Etat d'une case
+enum CaseState {              // Etat d'une case
     case white
     case red
 }
@@ -25,7 +25,7 @@ struct CasePosition: Hashable {
     let column: Character // A, B...
 }
 
-struct Ship { // Structure d'un bateau
+struct Ship {                // Structure d'un bateau
     let cases: [CasePosition]
     let striked: Bool = false
     func length() -> Int {
@@ -37,30 +37,26 @@ struct Ship { // Structure d'un bateau
     
 }
 
-var gameBoard: [CasePosition: CaseState] // Board
+var gameBoard: [CasePosition: CaseState]          // Board
 
 
-
-func displayCase(caseAAficher: CasePosition){
-    if (caseAAfficher: CasePosition) {
-        print()
-    }
-}
-
-func displayBoard(gameBoard: [CasePosition: CaseState]) { // Fonction d'affichage du board
+func displayBoard(gameBoard: [CasePosition: CaseState]) {            // Fonction d'affichage du board
     
-    for caseAAficher: CasePosition in gameBoard do {
-        displayCase(caseAAficher: <#T##CasePosition#>);
+    let columns: [Character] = ["A","B","C","D","E"]
+    for row in (0..9){
+        for col in columns{
+            
+        }
     }
     
 }
 
-func isShipEntirelyStriked(ship: Ship, gameBoard: [CasePosition: CaseState]) // Fonction bool bateau entièrement coulé
+func isShipEntirelyStriked(ship: Ship, gameBoard: [CasePosition: CaseState])             // Fonction bool bateau entièrement coulé
     -> Bool {
         return false
 }
 
-func isGameEnded(ships: [Ship]) -> Bool { // Fonction bool partie terminée
+func isGameEnded(ships: [Ship]) -> Bool {                  // Fonction bool partie terminée
     return false
 }
 // Randomly choose a position for all computer battleships
@@ -74,7 +70,7 @@ func isGameEnded(ships: [Ship]) -> Bool { // Fonction bool partie terminée
 //    }
 //}
 
-func game(gameboard: [CasePosition: CaseState], ){
+func game(gameboard: [CasePosition: CaseState]){
     
     
     
